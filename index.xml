@@ -1,48 +1,124 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>WILTONPAULO</title>
+    <title>Wilton&#39;s Blog</title>
     <link>https://wiltonpaulo.github.io/</link>
-    <description>Recent content on WILTONPAULO</description>
+    <description>Recent content on Wilton&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 19 Jun 2022 15:25:32 -0300</lastBuildDate><atom:link href="https://wiltonpaulo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Copyright © 2022, Wilton Paulo; all rights reserved.</copyright>
+    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wiltonpaulo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello World Third</title>
-      <link>https://wiltonpaulo.github.io/posts/hello-world-third/</link>
-      <pubDate>Sun, 19 Jun 2022 15:25:32 -0300</pubDate>
+      <title>First Post</title>
+      <link>https://wiltonpaulo.github.io/post/emoji-support/</link>
+      <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/posts/hello-world-third/</guid>
-      <description>Another page</description>
+      <guid>https://wiltonpaulo.github.io/post/emoji-support/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
     <item>
-      <title>Hello World Second</title>
-      <link>https://wiltonpaulo.github.io/posts/hello-world-second/</link>
-      <pubDate>Sun, 19 Jun 2022 15:19:53 -0300</pubDate>
+      <title>Using Hugo page bundles</title>
+      <link>https://wiltonpaulo.github.io/post/bundle/</link>
+      <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/posts/hello-world-second/</guid>
-      <description>Try another test just testing</description>
+      <guid>https://wiltonpaulo.github.io/post/bundle/</guid>
+      <description>
+        
+          
+            Page bundles are an optional way to organize page resources within Hugo. You can opt-in to using page bundles in Hugo Clarity with `usePageBundles` in your site configuration --- or in a page&#39;s front matter.
+          
+          
+        
+      </description>
     </item>
     
     <item>
-      <title>Hello World</title>
-      <link>https://wiltonpaulo.github.io/about/</link>
-      <pubDate>Sun, 19 Jun 2022 15:09:57 -0300</pubDate>
+      <title>Using Notices</title>
+      <link>https://wiltonpaulo.github.io/post/notices/</link>
+      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/about/</guid>
-      <description>Troia sanguine Genibus classemque virginei raptam Lorem markdownum adiuvat dumque tela tamen eburno visuraque extremum verumque. Solvit omnia verruntur dissilit, animum intrarit invisa. Hister quos, praestans vix, et canis Samius et tempore aether busta linguae opemque posset postquam me est o. Est tactu quod, certam; sub non tamen laticem lacrimis sed!
-Lacrimas resupinus non radium, suasit! Est et etiam dum. His levem: paenitet quodque pudore perfide: fugit dedit rostris, res in, di enim cecidisse longius intempestiva.</description>
+      <guid>https://wiltonpaulo.github.io/post/notices/</guid>
+      <description>
+        
+          
+            The &amp;quot;Notices&amp;quot; shortcode enables you to call out pieces of information - sidebars, warnings, tips, etc.
+To create a notice on a page, you can use the notice shortcode.
+You use the notice shortcode, with the first parameter being one of note, info, tip, and warning. Then add a title for your note in quotes as the second parameter. The inner body of the note can be whatever markdown you want to create.
+          
+          
+        
+      </description>
     </item>
     
     <item>
-      <title>Hello World</title>
-      <link>https://wiltonpaulo.github.io/posts/hello-world/</link>
-      <pubDate>Sun, 19 Jun 2022 15:09:57 -0300</pubDate>
+      <title>Markdown Syntax Guide</title>
+      <link>https://wiltonpaulo.github.io/post/markdown-syntax/</link>
+      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/posts/hello-world/</guid>
-      <description>Troia sanguine Genibus classemque virginei raptam Lorem markdownum adiuvat dumque tela tamen eburno visuraque extremum verumque. Solvit omnia verruntur dissilit, animum intrarit invisa. Hister quos, praestans vix, et canis Samius et tempore aether busta linguae opemque posset postquam me est o. Est tactu quod, certam; sub non tamen laticem lacrimis sed!
-Lacrimas resupinus non radium, suasit! Est et etiam dum. His levem: paenitet quodque pudore perfide: fugit dedit rostris, res in, di enim cecidisse longius intempestiva.</description>
+      <guid>https://wiltonpaulo.github.io/post/markdown-syntax/</guid>
+      <description>
+        
+          
+            &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Rich Content</title>
+      <link>https://wiltonpaulo.github.io/post/rich-content/</link>
+      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wiltonpaulo.github.io/post/rich-content/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Placeholder Text</title>
+      <link>https://wiltonpaulo.github.io/post/placeholder-text/</link>
+      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wiltonpaulo.github.io/post/placeholder-text/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
+    <item>
+      <title>Math Typesetting</title>
+      <link>https://wiltonpaulo.github.io/post/math-typesetting/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://wiltonpaulo.github.io/post/math-typesetting/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
+          
+          
+        
+      </description>
     </item>
     
   </channel>
