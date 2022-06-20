@@ -9,14 +9,14 @@
     <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wiltonpaulo.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>First Post</title>
-      <link>https://wiltonpaulo.github.io/post/emoji-support/</link>
+      <link>https://wiltonpaulo.github.io/post/first-post/</link>
       <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/post/emoji-support/</guid>
+      <guid>https://wiltonpaulo.github.io/post/first-post/</guid>
       <description>
         
           
-            &lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;
+            &lt;p&gt;Pod Security Admission is a new-ish feature in Kubernetes which provides out-of-the-box controls for the Pod Security Standards. I touch on its behavior a bit, but as it has been covered already elsewhere, in this article I really wanted to collect the pros and cons and then frame it in context of an admission controller like Kyverno.&lt;/p&gt;
           
           
         
