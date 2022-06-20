@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on </title>
-    <link>https://wiltonpaulo.github.io/pt/categories/</link>
+    <link>https://wiltonpaulo.com/pt/categories/</link>
     <description>Recent content in Categories on </description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022, Wilton Paulo; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://wiltonpaulo.github.io/pt/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://wiltonpaulo.com/pt/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

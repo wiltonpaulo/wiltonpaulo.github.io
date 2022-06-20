@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wilton&#39;s Blog</title>
-    <link>https://wiltonpaulo.github.io/</link>
+    <link>https://wiltonpaulo.com/</link>
     <description>Recent content on Wilton&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022, Wilton Paulo; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 20 Jun 2022 11:25:04 -0300</lastBuildDate><atom:link href="https://wiltonpaulo.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 20 Jun 2022 11:25:04 -0300</lastBuildDate><atom:link href="https://wiltonpaulo.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello World Test</title>
-      <link>https://wiltonpaulo.github.io/post/hello-world-test/</link>
+      <link>https://wiltonpaulo.com/post/hello-world-test/</link>
       <pubDate>Mon, 20 Jun 2022 11:25:04 -0300</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/post/hello-world-test/</guid>
+      <guid>https://wiltonpaulo.com/post/hello-world-test/</guid>
       <description>
         
           
@@ -25,10 +25,10 @@
     
     <item>
       <title>First Post</title>
-      <link>https://wiltonpaulo.github.io/post/first-post/</link>
+      <link>https://wiltonpaulo.com/post/first-post/</link>
       <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/post/first-post/</guid>
+      <guid>https://wiltonpaulo.com/post/first-post/</guid>
       <description>
         
           
@@ -41,10 +41,10 @@
     
     <item>
       <title>Using Hugo page bundles</title>
-      <link>https://wiltonpaulo.github.io/post/bundle/</link>
+      <link>https://wiltonpaulo.com/post/bundle/</link>
       <pubDate>Thu, 24 Mar 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/post/bundle/</guid>
+      <guid>https://wiltonpaulo.com/post/bundle/</guid>
       <description>
         
           
@@ -57,10 +57,10 @@
     
     <item>
       <title>Using Notices</title>
-      <link>https://wiltonpaulo.github.io/post/notices/</link>
+      <link>https://wiltonpaulo.com/post/notices/</link>
       <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/post/notices/</guid>
+      <guid>https://wiltonpaulo.com/post/notices/</guid>
       <description>
         
           
@@ -75,10 +75,10 @@ You use the notice shortcode, with the first parameter being one of note, info, 
     
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>https://wiltonpaulo.github.io/post/markdown-syntax/</link>
+      <link>https://wiltonpaulo.com/post/markdown-syntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/post/markdown-syntax/</guid>
+      <guid>https://wiltonpaulo.com/post/markdown-syntax/</guid>
       <description>
         
           
@@ -91,10 +91,10 @@ You use the notice shortcode, with the first parameter being one of note, info, 
     
     <item>
       <title>Rich Content</title>
-      <link>https://wiltonpaulo.github.io/post/rich-content/</link>
+      <link>https://wiltonpaulo.com/post/rich-content/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/post/rich-content/</guid>
+      <guid>https://wiltonpaulo.com/post/rich-content/</guid>
       <description>
         
           
@@ -107,10 +107,10 @@ You use the notice shortcode, with the first parameter being one of note, info, 
     
     <item>
       <title>Placeholder Text</title>
-      <link>https://wiltonpaulo.github.io/post/placeholder-text/</link>
+      <link>https://wiltonpaulo.com/post/placeholder-text/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/post/placeholder-text/</guid>
+      <guid>https://wiltonpaulo.com/post/placeholder-text/</guid>
       <description>
         
           
@@ -123,10 +123,10 @@ You use the notice shortcode, with the first parameter being one of note, info, 
     
     <item>
       <title>Math Typesetting</title>
-      <link>https://wiltonpaulo.github.io/post/math-typesetting/</link>
+      <link>https://wiltonpaulo.com/post/math-typesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.github.io/post/math-typesetting/</guid>
+      <guid>https://wiltonpaulo.com/post/math-typesetting/</guid>
       <description>
         
           
