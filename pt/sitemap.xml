@@ -2,8 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wiltonpaulo.com/pt/about/</loc>
+    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wiltonpaulo.com/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://wiltonpaulo.com/pt/about/"
+                />
+  </url><url>
     <loc>https://wiltonpaulo.com/pt/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -16,7 +28,6 @@
                 />
   </url><url>
     <loc>https://wiltonpaulo.com/pt/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -28,79 +39,7 @@
                 href="https://wiltonpaulo.com/pt/categories/"
                 />
   </url><url>
-    <loc>https://wiltonpaulo.com/pt/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiltonpaulo.com/tags/css/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://wiltonpaulo.com/pt/tags/css/"
-                />
-  </url><url>
-    <loc>https://wiltonpaulo.com/pt/tags/destacado/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiltonpaulo.com/pt/post/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiltonpaulo.com/post/markdown-syntax/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://wiltonpaulo.com/pt/post/markdown-syntax/"
-                />
-  </url><url>
-    <loc>https://wiltonpaulo.com/pt/series/guia-de-temas/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiltonpaulo.com/pt/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiltonpaulo.com/tags/html/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://wiltonpaulo.com/pt/tags/html/"
-                />
-  </url><url>
-    <loc>https://wiltonpaulo.com/pt/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiltonpaulo.com/tags/markdown/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://wiltonpaulo.com/pt/tags/markdown/"
-                />
-  </url><url>
-    <loc>https://wiltonpaulo.com/pt/post/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiltonpaulo.com/post/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://wiltonpaulo.com/pt/post/"
-                />
-  </url><url>
     <loc>https://wiltonpaulo.com/pt/series/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -112,11 +51,7 @@
                 href="https://wiltonpaulo.com/pt/series/"
                 />
   </url><url>
-    <loc>https://wiltonpaulo.com/pt/categories/sintaxe/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://wiltonpaulo.com/pt/tags/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
@@ -127,14 +62,5 @@
                 hreflang="pt"
                 href="https://wiltonpaulo.com/pt/tags/"
                 />
-  </url><url>
-    <loc>https://wiltonpaulo.com/pt/tags/temas/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiltonpaulo.com/pt/categories/temas/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiltonpaulo.com/pt/about/</loc>
-    <lastmod>2019-02-28T00:00:00+00:00</lastmod>
   </url>
 </urlset>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on Wilton&#39;s Blog</title>
+    <title>Tags on WILTONPAULO</title>
     <link>https://wiltonpaulo.com/tags/</link>
-    <description>Recent content in Tags on Wilton&#39;s Blog</description>
+    <description>Recent content in Tags on WILTONPAULO</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022, Wilton Paulo; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 20 Jun 2022 11:25:04 -0300</lastBuildDate><atom:link href="https://wiltonpaulo.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wiltonpaulo.com/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

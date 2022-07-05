@@ -1,38 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wilton&#39;s Blog</title>
+    <title>WILTONPAULO</title>
     <link>https://wiltonpaulo.com/</link>
-    <description>Recent content on Wilton&#39;s Blog</description>
+    <description>Recent content on WILTONPAULO</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022, Wilton Paulo; all rights reserved.</copyright>
-    <lastBuildDate>Mon, 20 Jun 2022 11:25:04 -0300</lastBuildDate><atom:link href="https://wiltonpaulo.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wiltonpaulo.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Hello World Test</title>
-      <link>https://wiltonpaulo.com/post/hello-world-test/</link>
-      <pubDate>Mon, 20 Jun 2022 11:25:04 -0300</pubDate>
-      
-      <guid>https://wiltonpaulo.com/post/hello-world-test/</guid>
-      <description>
-        
-          
-            Insert Lead paragraph here.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>First Post</title>
-      <link>https://wiltonpaulo.com/post/first-post/</link>
+      <title>Hello World</title>
+      <link>https://wiltonpaulo.com/post/hello-world/</link>
       <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.com/post/first-post/</guid>
+      <guid>https://wiltonpaulo.com/post/hello-world/</guid>
       <description>
         
           
-            &lt;p&gt;Pod Security Admission is a new-ish feature in Kubernetes which provides out-of-the-box controls for the Pod Security Standards. I touch on its behavior a bit, but as it has been covered already elsewhere, in this article I really wanted to collect the pros and cons and then frame it in context of an admission controller like Kyverno.&lt;/p&gt;
+            &lt;p&gt;That’s the first post on this blog/site. So. I decided to improve my writing skills in english and share them with everyone.&lt;/p&gt;
           
           
         
@@ -49,88 +33,6 @@
         
           
             Page bundles are an optional way to organize page resources within Hugo. You can opt-in to using page bundles in Hugo Clarity with `usePageBundles` in your site configuration --- or in a page&#39;s front matter.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Using Notices</title>
-      <link>https://wiltonpaulo.com/post/notices/</link>
-      <pubDate>Fri, 20 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://wiltonpaulo.com/post/notices/</guid>
-      <description>
-        
-          
-            The &amp;quot;Notices&amp;quot; shortcode enables you to call out pieces of information - sidebars, warnings, tips, etc.
-To create a notice on a page, you can use the notice shortcode.
-You use the notice shortcode, with the first parameter being one of note, info, tip, and warning. Then add a title for your note in quotes as the second parameter. The inner body of the note can be whatever markdown you want to create.
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://wiltonpaulo.com/post/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://wiltonpaulo.com/post/markdown-syntax/</guid>
-      <description>
-        
-          
-            &lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Rich Content</title>
-      <link>https://wiltonpaulo.com/post/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://wiltonpaulo.com/post/rich-content/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Placeholder Text</title>
-      <link>https://wiltonpaulo.com/post/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://wiltonpaulo.com/post/placeholder-text/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;
-          
-          
-        
-      </description>
-    </item>
-    
-    <item>
-      <title>Math Typesetting</title>
-      <link>https://wiltonpaulo.com/post/math-typesetting/</link>
-      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://wiltonpaulo.com/post/math-typesetting/</guid>
-      <description>
-        
-          
-            &lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;
           
           
         

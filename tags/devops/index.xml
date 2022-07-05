@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>devops on Wilton&#39;s Blog</title>
+    <title>devops on WILTONPAULO</title>
     <link>https://wiltonpaulo.com/tags/devops/</link>
-    <description>Recent content in devops on Wilton&#39;s Blog</description>
+    <description>Recent content in devops on WILTONPAULO</description>
     <generator>Hugo -- gohugo.io</generator>
     <copyright>Copyright © 2022, Wilton Paulo; all rights reserved.</copyright>
     <lastBuildDate>Sun, 19 Jun 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wiltonpaulo.com/tags/devops/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>First Post</title>
-      <link>https://wiltonpaulo.com/post/first-post/</link>
+      <title>Hello World</title>
+      <link>https://wiltonpaulo.com/post/hello-world/</link>
       <pubDate>Sun, 19 Jun 2022 00:00:00 +0000</pubDate>
       
-      <guid>https://wiltonpaulo.com/post/first-post/</guid>
+      <guid>https://wiltonpaulo.com/post/hello-world/</guid>
       <description>
         
           
-            &lt;p&gt;Pod Security Admission is a new-ish feature in Kubernetes which provides out-of-the-box controls for the Pod Security Standards. I touch on its behavior a bit, but as it has been covered already elsewhere, in this article I really wanted to collect the pros and cons and then frame it in context of an admission controller like Kyverno.&lt;/p&gt;
+            &lt;p&gt;That’s the first post on this blog/site. So. I decided to improve my writing skills in english and share them with everyone.&lt;/p&gt;
           
           
         
