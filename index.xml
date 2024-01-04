@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>WILTONPAULO</title>
+    <title>Wilton Paulo</title>
     <link>https://wiltonpaulo.com/</link>
-    <description>Recent content on WILTONPAULO</description>
+    <description>Recent content on Wilton Paulo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>Copyright © 2022, Wilton Paulo; all rights reserved.</copyright>
-    <lastBuildDate>Sun, 27 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://wiltonpaulo.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <copyright>Copyright © 2024, Wilton Paulo; all rights reserved.</copyright>
+    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://wiltonpaulo.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring Blockchain and DevOps Automation with OCI</title>
+      <link>https://wiltonpaulo.com/post/blockchain/blockchain/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://wiltonpaulo.com/post/blockchain/blockchain/</guid>
+      <description>
+        
+          
+            &lt;p&gt;Hey there! Today, I&#39;m thrilled to share a chapter from my journey into the realms of blockchain and infrastructure automation. Let me unravel the inspiration behind my latest project—a fusion of exploration, learning, and hands-on experience.&lt;/p&gt;
+          
+          
+        
+      </description>
+    </item>
+    
     <item>
       <title>Urban Walk 2022</title>
       <link>https://wiltonpaulo.com/post/urban-walk-2022/</link>

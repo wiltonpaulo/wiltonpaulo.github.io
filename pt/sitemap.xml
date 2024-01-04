@@ -15,18 +15,6 @@
                 href="https://wiltonpaulo.com/pt/about/"
                 />
   </url><url>
-    <loc>https://wiltonpaulo.com/pt/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://wiltonpaulo.com/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="pt"
-                href="https://wiltonpaulo.com/pt/"
-                />
-  </url><url>
     <loc>https://wiltonpaulo.com/pt/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -61,6 +49,18 @@
                 rel="alternate"
                 hreflang="pt"
                 href="https://wiltonpaulo.com/pt/tags/"
+                />
+  </url><url>
+    <loc>https://wiltonpaulo.com/pt/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://wiltonpaulo.com/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt"
+                href="https://wiltonpaulo.com/pt/"
                 />
   </url>
 </urlset>
