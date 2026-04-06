@@ -1,0 +1,117 @@
+<!-- Custom Blog Sidebar with Year/Month Filter -->
+{{- $allPosts := where site.RegularPages "Section" "post" -}}
+{{- $groupedByYear := dict -}}
+
+{{- range $allPosts -}}
+  {{- $year := .Date.Format "2006" -}}
+  {{- $month := .Date.Format "January" -}}
+  {{- $monthNum := .Date.Format "01" -}}
+
+  {{- $yearData := index $groupedByYear $year | default dict -}}
+  {{- $monthData := index $yearData $monthNum | default dict -}}
+  {{- $monthData = merge $monthData (dict
+    "name" $month
+    "count" (add (default 0 $monthData.count) 1)
+    "posts" (default slice $monthData.posts | append .)
+  ) -}}
+  {{- $yearData = merge $yearData (dict $monthNum $monthData) -}}
+  {{- $yearData = merge $yearData (dict
+    "count" (add (default 0 $yearData.count) 1)
+  ) -}}
+  {{- $groupedByYear = merge $groupedByYear (dict $year $yearData) -}}
+{{- end -}}
+
+{{- $currentYear := "" -}}
+{{- $currentMonth := "" -}}
+{{- with .Date -}}
+  {{- $currentYear = .Format "2006" -}}
+  {{- $currentMonth = .Format "01" -}}
+{{- end -}}
+
+<div class="hx:mb-6">
+  <h3 class="hx:mb-3 hx:px-2 hx:text-sm hx:font-semibold hx:text-gray-900 hx:dark:text-gray-100">
+    Filter by Date
+  </h3>
+
+  <div class="hx:space-y-1">
+    <!-- All Posts -->
+    <a href="{{ "/post/" | relLangURL }}"
+       class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:transition-colors
+              {{ if eq .RelPermalink "/post/" }}
+                hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:dark:bg-primary-400/10 hx:dark:text-primary-600
+              {{ else }}
+                hx:text-gray-500 hx:hover:bg-gray-100 hx:hover:text-gray-900 hx:dark:text-neutral-400 hx:dark:hover:bg-primary-100/5 hx:dark:hover:text-gray-50
+              {{ end }}">
+      <span>All Posts</span>
+      <span class="hx:text-xs hx:opacity-60">{{ len $allPosts }}</span>
+    </a>
+
+    <!-- Years -->
+    {{- range $year, $yearData := $groupedByYear -}}
+      {{- $isCurrentYear := eq $year $currentYear -}}
+      <div class="hx:mt-2">
+        <div class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:rounded-sm hx:px-2 hx:py-1.5 hx:text-sm hx:font-medium
+                  {{ if $isCurrentYear }}
+                    hextra-sidebar-active-item hx:bg-primary-100 hx:font-semibold hx:text-primary-800 hx:dark:bg-primary-400/10 hx:dark:text-primary-600
+                  {{ else }}
+                    hx:text-gray-700 hx:dark:text-gray-300
+                  {{ end }}">
+          <span>{{ $year }}</span>
+          <span class="hx:text-xs hx:opacity-60">{{ $yearData.count }}</span>
+        </div>
+
+        <!-- Months for current year -->
+        {{- if $isCurrentYear -}}
+          <div class="hx:ml-3 hx:mt-1 hx:space-y-0.5">
+            {{- range $monthNum, $monthData := $yearData -}}
+              {{- if ne $monthNum "count" -}}
+                {{- $isCurrentMonth := eq $monthNum $currentMonth -}}
+                <div class="hx:flex hx:items-center hx:justify-between hx:gap-2 hx:rounded-sm hx:px-2 hx:py-1 hx:text-xs
+                          {{ if $isCurrentMonth }}
+                            hx:bg-primary-50 hx:text-primary-700 hx:dark:bg-primary-400/20 hx:dark:text-primary-500
+                          {{ else }}
+                            hx:text-gray-600 hx:dark:text-gray-400
+                          {{ end }}">
+                  <span>{{ $monthData.name }}</span>
+                  <span class="hx:text-xs hx:opacity-60">{{ $monthData.count }}</span>
+                </div>
+              {{- end -}}
+            {{- end -}}
+          </div>
+        {{- end -}}
+      </div>
+    {{- end -}}
+  </div>
+</div>
+
+<!-- Archive Stats -->
+<div class="hx:mt-6 hx:pt-4 hx:border-t hx:border-gray-200 hx:dark:border-neutral-800">
+  <h3 class="hx:mb-2 hx:px-2 hx:text-sm hx:font-semibold hx:text-gray-900 hx:dark:text-gray-100">
+    Archive Stats
+  </h3>
+  <div class="hx:space-y-1 hx:px-2">
+    <div class="hx:flex hx:items-center hx:justify-between hx:text-sm">
+      <span class="hx:text-gray-600 hx:dark:text-gray-400">Total Posts</span>
+      <span class="hx:font-medium">{{ len $allPosts }}</span>
+    </div>
+    <div class="hx:flex hx:items-center hx:justify-between hx:text-sm">
+      <span class="hx:text-gray-600 hx:dark:text-gray-400">Years</span>
+      <span class="hx:font-medium">{{ len $groupedByYear }}</span>
+    </div>
+    {{- $totalMonths := 0 -}}
+    {{- range $year, $yearData := $groupedByYear -}}
+      {{- $totalMonths = add $totalMonths (sub (len $yearData) 1) -}}
+    {{- end -}}
+    <div class="hx:flex hx:items-center hx:justify-between hx:text-sm">
+      <span class="hx:text-gray-600 hx:dark:text-gray-400">Months with Posts</span>
+      <span class="hx:font-medium">{{ $totalMonths }}</span>
+    </div>
+  </div>
+
+  <!-- Implementation Note -->
+  <div class="hx:mt-4 hx:pt-4 hx:border-t hx:border-gray-200 hx:dark:border-neutral-800">
+    <p class="hx:text-xs hx:text-gray-500 hx:dark:text-gray-400 hx:px-2">
+      <strong>Note:</strong> Year/month filters show distribution. To enable clickable filters, create archive pages in <code>content/post/YYYY/</code> and <code>content/post/YYYY/MM/</code> directories.
+    </p>
+  </div>
+</div>

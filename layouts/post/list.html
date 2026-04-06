@@ -1,0 +1,146 @@
+{{ define "main" }}
+  <div class="hx:mx-auto hx:flex hextra-max-page-width">
+    {{/* Custom Blog Sidebar with Year/Month Filter */}}
+    <aside class="hextra-sidebar-container hx:flex hx:flex-col hx:print:hidden hx:md:top-16 hx:md:shrink-0 hx:md:w-64 hx:md:self-start hx:max-md:[transform:translate3d(0,-100%,0)] hx:md:sticky">
+      <div class="hextra-scrollbar hx:overflow-y-auto hx:overflow-x-hidden hx:p-4 hx:grow hx:md:h-[calc(100vh-var(--navbar-height)-var(--menu-height))]">
+        {{ partial "custom/blog-sidebar.html" . }}
+      </div>
+    </aside>
+
+    <article class="hx:w-full hx:break-words hx:flex hx:min-h-[calc(100vh-var(--navbar-height))] hx:min-w-0 hx:justify-center hx:pb-8 hx:pr-[calc(env(safe-area-inset-right)-1.5rem)]">
+      <main id="content" class="hx:w-full hx:min-w-0 hextra-max-content-width hx:px-6 hx:pt-4 hx:md:px-12">
+
+        <h1 class="hx:mt-2 hx:text-4xl hx:font-bold hx:tracking-tight hx:text-slate-900 hx:dark:text-slate-100">
+          {{ .Title }}
+        </h1>
+
+        <div class="content hx:mt-4 hx:text-gray-500 hx:dark:text-gray-400 hx:text-lg">
+          {{ .Content }}
+        </div>
+
+        {{- $pages := partial "utils/sort-pages" (dict "page" . "by" site.Params.blog.list.sortBy "order" site.Params.blog.list.sortOrder) -}}
+        {{- $paginator := .Paginate $pages -}}
+
+        <div class="hx:mt-12 blog-grid hx:grid hx:grid-cols-1 md:hx:grid-cols-2 lg:hx:grid-cols-3 hx:gap-8">
+          {{- range $paginator.Pages }}
+            {{/* Enhanced Image Logic with Default Thumbnails */}}
+            {{- $image := .Params.thumbnail | default .Params.image | default .Params.featured_image -}}
+
+            {{/* Try to get image from page resources */}}
+            {{- if not $image -}}
+               {{- $imageResource := .Resources.GetMatch "featured*" -}}
+               {{- with $imageResource -}}
+                 {{- $image = .RelPermalink -}}
+               {{- end -}}
+            {{- end -}}
+
+            {{/* If still no image, use default based on tags/categories */}}
+            {{- if not $image -}}
+              {{- $defaultThumbnail := "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+
+              {{/* Check tags for matching default thumbnails */}}
+              {{- if .Params.tags -}}
+                {{- $tags := .Params.tags -}}
+
+                {{/* Blockchain & Web3 */}}
+                {{- if or (in $tags "blockchain") (in $tags "web3") (in $tags "crypto") (in $tags "bitcoin") (in $tags "ethereum") (in $tags "defi") (in $tags "nft") -}}
+                  {{- $defaultThumbnail = "https://images.unsplash.com/photo-1620336655055-bd87c5d1d73f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+
+                {{/* DevOps & Cloud */}}
+                {{- else if or (in $tags "devops") (in $tags "cloud") (in $tags "aws") (in $tags "azure") (in $tags "gcp") (in $tags "kubernetes") (in $tags "docker") (in $tags "terraform") (in $tags "ci-cd") -}}
+                  {{- $defaultThumbnail = "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+
+                {{/* Leadership & Management */}}
+                {{- else if or (in $tags "leader") (in $tags "leadership") (in $tags "management") (in $tags "career") (in $tags "engineering") (in $tags "team") (in $tags "strategy") -}}
+                  {{- $defaultThumbnail = "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+
+                {{/* Programming & Development */}}
+                {{- else if or (in $tags "programming") (in $tags "code") (in $tags "development") (in $tags "software") (in $tags "python") (in $tags "javascript") (in $tags "go") (in $tags "java") (in $tags "rust") (in $tags "typescript") -}}
+                  {{- $defaultThumbnail = "https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+
+                {{/* AI & Machine Learning */}}
+                {{- else if or (in $tags "ai") (in $tags "machine-learning") (in $tags "artificial-intelligence") (in $tags "deep-learning") (in $tags "neural-networks") -}}
+                  {{- $defaultThumbnail = "https://images.unsplash.com/photo-1677442136019-21780ecad995?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+
+                {{/* Security & Cybersecurity */}}
+                {{- else if or (in $tags "security") (in $tags "cybersecurity") (in $tags "hacking") (in $tags "pentesting") (in $tags "encryption") (in $tags "privacy") -}}
+                  {{- $defaultThumbnail = "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+
+                {{/* Data & Infrastructure */}}
+                {{- else if or (in $tags "data") (in $tags "infrastructure") (in $tags "server") (in $tags "database") (in $tags "storage") (in $tags "backup") -}}
+                  {{- $defaultThumbnail = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+
+                {{/* Networking */}}
+                {{- else if or (in $tags "networking") (in $tags "network") (in $tags "vpn") (in $tags "firewall") (in $tags "routing") (in $tags "dns") -}}
+                  {{- $defaultThumbnail = "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+
+                {{/* Fallback for unmatched tags - Abstract Technology */}}
+                {{- else -}}
+                  {{- $defaultThumbnail = "https://images.unsplash.com/photo-1517077304055-6e89abbf09b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+                {{- end -}}
+
+              {{/* Posts without tags */}}
+              {{- else -}}
+                {{- $defaultThumbnail = "https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" -}}
+              {{- end -}}
+
+              {{- $image = $defaultThumbnail -}}
+            {{- end -}}
+
+            <a class="post-card hextra-card hx:group hx:flex hx:flex-col hx:overflow-hidden hx:rounded-xl hx:border hx:border-gray-200 hx:dark:border-neutral-700 hx:bg-white hx:dark:bg-neutral-800 hx:transition-all hx:duration-300 hx:hover:shadow-lg hx:hover:-translate-y-1"
+               href="{{ .RelPermalink }}"
+               data-year="{{ .Date.Format "2006" }}"
+               data-tags="{{ if .Params.tags }}{{ delimit .Params.tags "," | lower }}{{ end }}">
+
+              {{/* Card Image with Hextra classes - Always has thumbnail */}}
+              <div class="hextra-card-image hx:relative hx:w-full hx:aspect-[16/9] hx:overflow-hidden hx:bg-gradient-to-br hx:from-gray-50 hx:to-gray-100 hx:dark:from-neutral-800 hx:dark:to-neutral-900">
+                <img alt="{{ .Title }}" class="hx:absolute hx:inset-0 hx:w-full hx:h-full hx:object-cover hx:object-center hx:transition-transform hx:duration-500 hx:group-hover:scale-110" loading="lazy" src="{{ if hasPrefix $image "http" }}{{ $image }}{{ else }}{{ relURL $image }}{{ end }}">
+              </div>
+
+              {{/* Card Content Area */}}
+              <div class="hx:p-5 hx:flex hx:flex-col hx:flex-grow hx:gap-2">
+                <div class="hx:flex hx:items-center hx:gap-2 hx:text-xs hx:font-medium hx:text-gray-500 hx:dark:text-gray-400">
+                  <span class="hx:font-semibold hx:text-primary-600">{{ partial "utils/format-date" .Date }}</span>
+                  <span class="hx:text-gray-300 hx:dark:text-gray-600">•</span>
+                  <span>{{ .ReadingTime }} min</span>
+                </div>
+
+                <h2 class="hx:text-base hx:font-bold hx:leading-tight hx:text-slate-900 hx:dark:text-slate-100 hx:group-hover:text-primary-600 hx:transition-colors hx:line-clamp-2">
+                  {{ .Title }}
+                </h2>
+
+                <p class="hextra-card-subtitle hx:text-sm hx:leading-relaxed hx:text-gray-600 hx:dark:text-gray-400 hx:line-clamp-2 hx:opacity-90">
+                  {{- partial "utils/page-description" . -}}
+                </p>
+
+                <div class="read-more-section hx:mt-4 hx:flex hx:items-center hx:justify-end">
+                  <span class="read-more-link hx:text-xs hx:font-semibold hx:text-primary-600 hx:dark:text-primary-400 hx:flex hx:items-center hx:gap-1 hx:group-hover:hx:gap-2 hx:transition-all hx:duration-200">
+                    Read more
+                    <span class="hx:inline-block hx:transition-transform hx:duration-200 hx:group-hover:hx:translate-x-1">
+                      →
+                    </span>
+                  </span>
+                </div>
+
+                <div class="author-section hx:mt-auto hx:pt-3 hx:border-t hx:border-gray-100 hx:dark:border-neutral-700 hx:flex hx:items-center hx:justify-between">
+                  <div class="hx:flex hx:items-center hx:gap-2">
+                    <div class="hx:w-6 hx:h-6 hx:rounded-full hx:bg-primary-500/10 hx:flex hx:items-center hx:justify-center hx:text-xs hx:font-bold hx:text-primary-600 hx:dark:text-primary-400">
+                      {{ substr (.Params.author | default site.Params.author.name | default "W") 0 1 }}
+                    </div>
+                    <span class="hx:text-xs hx:font-medium hx:text-slate-600 hx:dark:text-slate-300">{{ .Params.author | default site.Params.author.name }}</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          {{- end -}}
+        </div>
+
+        {{- if gt $paginator.TotalPages 1 -}}
+          <div class="hx:mt-12">
+            {{ partial "components/blog-pager.html" $paginator }}
+          </div>
+        {{- end -}}
+      </main>
+    </article>
+  </div>
+{{ end }}
