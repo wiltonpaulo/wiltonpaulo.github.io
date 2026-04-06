@@ -1,0 +1,98 @@
+# Hextra Theme Configuration
+baseURL: "https://wiltonpaulo.com/"
+title: "Wilton Paulo"
+theme: "hextra"
+
+# Language settings
+defaultContentLanguage: en
+languages:
+  en:
+    label: English
+    weight: 1
+
+# Markup settings for Hextra
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+
+# Menu configuration (Standard Hextra)
+menu:
+  main:
+  - name: Home
+    pageRef: /
+    weight: 1
+  - name: Blog
+    pageRef: /post
+    weight: 2
+  - name: About
+    pageRef: /about
+    weight: 3
+  - name: Search
+    weight: 10
+    params:
+      type: search
+  - name: Theme
+    weight: 20
+    params:
+      type: theme-toggle
+
+# Theme Parameters
+params:
+  author:
+    name: "Wilton Paulo"
+    email: "wiltonpaulo@gmail.com"
+  description: "DevOps, Cloud, and Infrastructure Blog"
+
+  navbar:
+    displayTitle: true
+    displayLogo: false
+    width: normal
+
+  theme:
+    default: system
+    displayToggle: true
+
+  footer:
+    enable: true
+    displayCopyright: true
+    displayPoweredBy: true
+    width: normal
+
+  search:
+    enable: true
+    type: flexsearch
+
+  blog:
+    mainSections: [ "post" ]
+    sidebar:
+      display: true
+      # This enables the folder-tree based on date if your content is organized that way
+
+taxonomies:
+  tag: tags
+  category: categories
+  series: series
+
+# Archive pages configuration
+outputs:
+  home:
+  - HTML
+  - RSS
+  section:
+  - HTML
+  - RSS
+  - ArchiveHTML
+
+# Enable year and month archives
+permalinks:
+  post: /post/:year/:month/:slug/
+
+# Create archive pages
+outputFormats:
+  ArchiveHTML:
+    baseName: index
+    isHTML: true
+    mediaType: text/html

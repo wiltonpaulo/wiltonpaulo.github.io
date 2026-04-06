@@ -1,16 +1,7 @@
-[submodule "themes/eureka"]
-	path = themes/eureka
-	url = https://github.com/wangchucheng/hugo-eureka.git
 [submodule "public"]
 	path = public
 	url = git@github.com:wiltonpaulo/wiltonpaulo.github.io.git
 	branch = main
-[submodule "themes/hugo-coder"]
-	path = themes/hugo-coder
-	url = https://github.com/luizdepra/hugo-coder.git
-[submodule "themes/hugo-theme-bootstrap"]
-	path = themes/hugo-theme-bootstrap
-	url = git@github.com:razonyang/hugo-theme-bootstrap.git
-[submodule "themes/hugo-clarity"]
-	path = themes/hugo-clarity
-	url = git@github.com:chipzoller/hugo-clarity.git
+[submodule "themes/hextra"]
+	path = themes/hextra
+	url = https://github.com/imfing/hextra.git

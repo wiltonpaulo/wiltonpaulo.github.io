@@ -1,0 +1,124 @@
+<div class="hx:flex hx:flex-col hx:gap-6 hx:text-sm">
+
+  <div>
+    <button class="filter-btn hx:w-full hx:text-left hx:font-bold hx:text-primary-600 hx:py-2 hover:hx:underline active-filter" data-filter="all">
+      All Posts
+    </button>
+  </div>
+
+  <div>
+    <h3 class="hx:font-bold hx:text-gray-900 hx:dark:text-gray-100 hx:mb-3 hx:uppercase hx:tracking-wider hx:text-xs">
+      Filter by Year
+    </h3>
+    <ul class="hx:flex hx:flex-col hx:gap-2">
+      {{ $posts := where .Site.RegularPages "Section" "post" }}
+      {{ range $posts.GroupByDate "2006" }}
+        <li>
+          <button class="filter-btn hx:flex hx:justify-between hx:w-full hx:text-left hx:text-gray-600 hx:dark:text-gray-400 hover:hx:text-primary-600 hx:transition-colors" data-type="year" data-value="{{ .Key }}">
+            <span>{{ .Key }}</span>
+            <span class="hx:bg-gray-100 hx:dark:bg-neutral-800 hx:px-2 hx:rounded-full hx:text-xs">{{ len .Pages }}</span>
+          </button>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Get all filter buttons and cards
+    var buttons = document.querySelectorAll('.filter-btn');
+    var cards = document.querySelectorAll('.post-card');
+
+    console.log('Year filter initialized. Buttons:', buttons.length, 'Cards:', cards.length);
+
+    // Function to show all cards
+    function showAllCards() {
+      cards.forEach(function(card) {
+        card.style.display = 'flex';
+      });
+    }
+
+    // Function to filter by year
+    function filterByYear(year) {
+      cards.forEach(function(card) {
+        var cardYear = card.getAttribute('data-year');
+        if (cardYear === year) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // Function to set active button
+    function setActiveButton(button) {
+      // Remove active class from all buttons
+      buttons.forEach(function(btn) {
+        btn.classList.remove('active-filter');
+        btn.classList.remove('hx:text-primary-600', 'hx:font-bold');
+        btn.classList.add('hx:text-gray-600', 'hx:dark:text-gray-400');
+      });
+
+      // Add active class to clicked button
+      button.classList.add('active-filter', 'hx:text-primary-600', 'hx:font-bold');
+      button.classList.remove('hx:text-gray-600', 'hx:dark:text-gray-400');
+    }
+
+    // Add click event to all filter buttons
+    buttons.forEach(function(button) {
+      button.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        var filterType = this.getAttribute('data-type') || this.getAttribute('data-filter');
+        var filterValue = this.getAttribute('data-value');
+
+        console.log('Filter clicked:', filterType, filterValue);
+
+        // Set active button
+        setActiveButton(this);
+
+        // Apply filter
+        if (filterType === 'all') {
+          showAllCards();
+          window.history.pushState({}, '', window.location.pathname);
+        } else if (filterType === 'year') {
+          filterByYear(filterValue);
+          window.history.pushState({}, '', '#year=' + filterValue);
+        }
+      });
+    });
+
+    // Check URL hash on page load
+    function checkHash() {
+      var hash = window.location.hash.substring(1);
+
+      if (hash) {
+        var parts = hash.split('=');
+        if (parts[0] === 'year' && parts[1]) {
+          var yearButton = document.querySelector('[data-type="year"][data-value="' + parts[1] + '"]');
+          if (yearButton) {
+            setActiveButton(yearButton);
+            filterByYear(parts[1]);
+            return;
+          }
+        }
+      }
+
+      // Default: show all posts
+      var allButton = document.querySelector('[data-filter="all"]');
+      if (allButton) {
+        setActiveButton(allButton);
+        showAllCards();
+      }
+    }
+
+    // Initial check
+    checkHash();
+
+    // Handle browser back/forward
+    window.addEventListener('popstate', checkHash);
+
+    console.log('Year filter ready. Try clicking on year buttons!');
+  });
+</script>
