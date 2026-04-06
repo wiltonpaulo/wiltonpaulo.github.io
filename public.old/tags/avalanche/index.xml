@@ -1,0 +1,139 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wilton Paulo – Avalanche</title>
+    <link>http://localhost:1313/tags/avalanche/</link>
+    <description>Recent content in Avalanche on Wilton Paulo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>wiltonpaulo@gmail.com (Wilton Paulo)</managingEditor>
+    <webMaster>wiltonpaulo@gmail.com (Wilton Paulo)</webMaster>
+    <lastBuildDate>Mon, 19 Jun 2023 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://localhost:1313/tags/avalanche/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Exploring Blockchain and DevOps Automation with OCI</title>
+      <link>http://localhost:1313/blockchain/</link>
+      <pubDate>Mon, 19 Jun 2023 00:00:00 +0000</pubDate>
+      <author>wiltonpaulo@gmail.com (Wilton Paulo)</author>
+      <guid>http://localhost:1313/blockchain/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Greetings, fellow explorers of the digital frontier! Today marks an exciting chapter in my ongoing journey through the realms of blockchain technology and infrastructure automation. Allow me to share the inspiration and motivations that fueled the creation of my latest project—a convergence of exploration, learning, and hands-on experience.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;../avalanche-diagram.png&#34; alt=&#34;Avalanche Node Diagram&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;h2&gt;Unraveling Blockchain&amp;rsquo;s Mysteries&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;unraveling-blockchains-mysteries&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#unraveling-blockchains-mysteries&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Blockchain, often heralded as the cornerstone of decentralization, has captivated my curiosity for quite some time. The promise of transparent, secure, and trustless systems has led me to delve deeper into the intricacies of this transformative technology. The choice of Avalanche as my exploration ground stems from its reputation for scalability and versatility in crafting bespoke blockchain networks.&lt;/p&gt;
+&lt;h2&gt;Bridging Knowledge with Automation&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;bridging-knowledge-with-automation&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#bridging-knowledge-with-automation&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In tandem with my blockchain journey, the allure of automation beckoned. The desire to streamline and scale infrastructure operations led me to Packer and Terraform. Crafting custom virtual machines with Packer and orchestrating their deployment with Terraform on Oracle Cloud Infrastructure (OCI) not only intrigued me but presented a tangible opportunity to bridge my newfound knowledge with practical implementation.&lt;/p&gt;
+&lt;h2&gt;The Birth of the Project&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-birth-of-the-project&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-birth-of-the-project&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;And thus, the idea was born—an endeavor to amalgamate blockchain exploration with infrastructure automation. This project, housed within the digital corridors of GitHub, aims to document and share this expedition. Whether you&amp;rsquo;re a fellow explorer or a seasoned voyager in the realms of blockchain and automation, I invite you to join me on this learning odyssey.&lt;/p&gt;
+&lt;h3&gt;Why This Post?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;why-this-post&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-this-post&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;With this inaugural post, I aim to provide insights into the genesis of this project, shedding light on the reasons behind its inception and the goals it aspires to achieve. It&amp;rsquo;s not just a project; it&amp;rsquo;s a narrative of discovery and shared knowledge.&lt;/p&gt;
+&lt;p&gt;But first, let&amp;rsquo;s set the stage with a visual representation of the journey so far:&lt;/p&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Exploring Blockchain and DevOps Automation with OCI</title>
+      <link>http://localhost:1313/post/2023/06/exploring-blockchain-and-devops-automation-with-oci/</link>
+      <pubDate>Thu, 01 Jun 2023 00:00:00 +0000</pubDate>
+      <author>wiltonpaulo@gmail.com (Wilton Paulo)</author>
+      <guid>http://localhost:1313/post/2023/06/exploring-blockchain-and-devops-automation-with-oci/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Navigating the IT landscape for over two decades has taught me one indisputable truth: the industry never stops evolving, and our mindset must evolve with it. Throughout my career, I have seen the transition from on-premises bare-metal servers to virtualization, then to the cloud, and now to the decentralized paradigms of Web3.&lt;/p&gt;
+&lt;p&gt;While reading documentation and watching tutorials is great, true understanding only comes when you build things from scratch. You need to drop down into the technical trenches, face the errors, and design the architecture. This project was born from that exact desire: a personal engineering sandbox to fuse modern DevOps and Site Reliability Engineering (SRE) practices with blockchain infrastructure.&lt;/p&gt;
+&lt;p&gt;In this comprehensive guide, I will document my journey of architecting, automating, and deploying an Avalanche node on Oracle Cloud Infrastructure (OCI) using Packer and Terraform.&lt;/p&gt;
+&lt;h2&gt;1. The Core Philosophy: Why This Stack?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;1-the-core-philosophy-why-this-stack&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#1-the-core-philosophy-why-this-stack&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Before writing a single line of code, we need to define the problem and choose the right tools. Running a blockchain node is not just about executing a binary file. It is a classic infrastructure challenge. Nodes demand high availability, aggressive disk I/O, secure networking, and consistent compute power.&lt;/p&gt;
+&lt;h3&gt;Why Avalanche?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;why-avalanche&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-avalanche&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;I chose to explore the Avalanche network because of its unique architectural design. Unlike traditional single-chain networks, Avalanche uses a primary network containing three built-in blockchains (X-Chain, P-Chain, and C-Chain) and allows for the creation of custom Subnets. This complexity makes it a fascinating use case for infrastructure automation.&lt;/p&gt;
+&lt;h3&gt;Why Oracle Cloud Infrastructure (OCI)?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;why-oracle-cloud-infrastructure-oci&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-oracle-cloud-infrastructure-oci&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;In the cloud provider landscape, OCI is often overlooked, but it has a highly robust network backbone and a very competitive price-to-performance ratio, especially for compute instances and high-performance block storage. For a blockchain node where reading and writing to the database is intense, OCI&amp;rsquo;s flexible Block Volumes (which allow you to adjust the performance VPU/GB on the fly) are a perfect fit.&lt;/p&gt;
+&lt;h3&gt;Why Packer and Terraform?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;why-packer-and-terraform&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#why-packer-and-terraform&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;To deploy this node reliably, I applied the SRE principle of &lt;strong&gt;Infrastructure as Code (IaC)&lt;/strong&gt; and &lt;strong&gt;Immutable Infrastructure&lt;/strong&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Packer&lt;/strong&gt; creates a static, frozen snapshot of the operating system with all the software installed (Golden Image).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Terraform&lt;/strong&gt; provisions the cloud resources (networks, servers, disks) in a declarative, reproducible way.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Here is the high-level representation of the architecture we are building:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/images/avalanche-diagram.png&#34; alt=&#34;Avalanche Node Diagram&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;2. Network Design and Security Posture&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;2-network-design-and-security-posture&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#2-network-design-and-security-posture&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;In any cloud architecture, the network is the foundation. A common mistake when deploying blockchain nodes is exposing too many ports to the internet. Applying a &amp;ldquo;Zero Trust&amp;rdquo; and &amp;ldquo;Least Privilege&amp;rdquo; mindset is crucial.&lt;/p&gt;
+&lt;p&gt;Using Terraform, I modeled the network layer to be completely isolated and strictly controlled. The components include:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Virtual Cloud Network (VCN):&lt;/strong&gt; The logical boundary for the infrastructure, equipped with a dedicated CIDR block (e.g., &lt;code&gt;10.0.0.0/16&lt;/code&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Internet Gateway (IGW):&lt;/strong&gt; Attached to the VCN to allow outbound traffic (for the node to download updates and sync the ledger) and specific inbound traffic.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Route Tables:&lt;/strong&gt; Explicitly routing public traffic through the IGW.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Security Lists (Firewall Rules):&lt;/strong&gt; This is where the hardening happens. An Avalanche node requires peer-to-peer (P2P) communication to gossip with other nodes. I configured the Security List to &lt;strong&gt;only&lt;/strong&gt; allow ingress traffic on TCP port &lt;code&gt;9651&lt;/code&gt; (the default Avalanche P2P port).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;RPC Protection:&lt;/strong&gt; The RPC (Remote Procedure Call) port &lt;code&gt;9650&lt;/code&gt; is strictly blocked from the public internet. Exposing the RPC port is a massive security risk. In a production environment, RPC access should only be available via an internal network, a VPN, or a secure SSH tunnel.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This declarative network setup ensures that if the infrastructure is destroyed and recreated, the security posture remains identical and human error is eliminated.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;3. Baking the Golden Image with Packer&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;3-baking-the-golden-image-with-packer&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#3-baking-the-golden-image-with-packer&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;The old way of deploying servers involved booting a Linux machine, connecting via SSH, and running a massive bash script or Ansible playbook to install software. This takes time, and if a repository goes offline during the process, the server fails to boot correctly.&lt;/p&gt;
+&lt;p&gt;Immutable Infrastructure solves this. With HashiCorp Packer, I automated the creation of an OCI Custom Image. Think of this as baking a cake: once it&amp;rsquo;s baked, you can&amp;rsquo;t take the ingredients out, but you can serve the exact same cake thousands of times.&lt;/p&gt;
+&lt;h3&gt;The Provisioning Pipeline&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;the-provisioning-pipeline&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#the-provisioning-pipeline&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;My Packer template uses an Oracle Linux base image. During the build process, Packer spins up a temporary instance, connects to it, and runs a series of provisioners:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;System Updates and Hardening:&lt;/strong&gt; &lt;code&gt;yum update -y&lt;/code&gt; to get the latest security patches, installing basic tools like &lt;code&gt;curl&lt;/code&gt;, &lt;code&gt;wget&lt;/code&gt;, &lt;code&gt;tar&lt;/code&gt;, and &lt;code&gt;jq&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Creating a Dedicated User:&lt;/strong&gt; Running blockchain nodes as the &lt;code&gt;root&lt;/code&gt; user is a terrible practice. The script creates a specific &lt;code&gt;avalanche&lt;/code&gt; user with restricted permissions.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fetching the Binary:&lt;/strong&gt; The script downloads the specific version of the AvalancheGo binary from the official GitHub repository, extracts it, and places it in &lt;code&gt;/usr/local/bin&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Systemd Integration:&lt;/strong&gt; This is a vital SRE component. I wrote a custom &lt;code&gt;avalanchego.service&lt;/code&gt; file for &lt;code&gt;systemd&lt;/code&gt;. This ensures that the node starts automatically when the server boots. More importantly, it handles automatic restarts if the process crashes (e.g., &lt;code&gt;Restart=always&lt;/code&gt; and &lt;code&gt;RestartSec=5&lt;/code&gt;), and manages log limits to prevent the disk from filling up.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Once these steps are completed, Packer takes a snapshot of the disk, saves it as a Custom Image in OCI, and destroys the temporary instance. Now, booting a fully functional Avalanche node takes only a few seconds.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;4. Infrastructure Orchestration with Terraform&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;4-infrastructure-orchestration-with-terraform&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#4-infrastructure-orchestration-with-terraform&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;With the Golden Image ready, the next step is orchestration. Terraform is the engine that brings the architecture to life. I organized the Terraform code into logical sections to keep the code clean and maintainable.&lt;/p&gt;
+&lt;h3&gt;Dynamic Data Sources&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;dynamic-data-sources&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#dynamic-data-sources&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;One of the challenges with OCI is that availability domains and image IDs can change. I used Terraform &lt;code&gt;data&lt;/code&gt; blocks to dynamically query OCI for the correct Availability Domain and to fetch the exact OCID (Oracle Cloud Identifier) of the image created by Packer. This makes the code portable.&lt;/p&gt;
+&lt;h3&gt;Decoupling Compute from State (The SRE Way)&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;decoupling-compute-from-state-the-sre-way&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#decoupling-compute-from-state-the-sre-way&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;This is perhaps the most important architectural decision in the project. Blockchain nodes generate massive amounts of state data (the ledger database). If you store this data on the server&amp;rsquo;s main boot disk, you create a monolithic dependency. If the OS gets corrupted, or if you need to upgrade the compute instance size, you lose the database and have to synchronize the entire blockchain from scratch—a process that can take days.&lt;/p&gt;
+&lt;p&gt;To solve this, I designed the Terraform code to provision &lt;strong&gt;two&lt;/strong&gt; separate resources:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;The Compute Instance:&lt;/strong&gt; Created using our Packer image. This is stateless and disposable.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A Block Volume:&lt;/strong&gt; A separate, highly persistent disk attached to the instance via iSCSI or Paravirtualization.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;I configured the instance to mount this Block Volume automatically to the &lt;code&gt;~/.avalanchego/db&lt;/code&gt; directory.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;The result?&lt;/strong&gt; If the server fails, or if I want to upgrade the CPU, I can simply use Terraform to destroy the compute instance, spin up a new one, and re-attach the existing Block Volume. The node turns back on and resumes syncing exactly where it left off. This is the essence of resilient systems.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;5. Operational Realities: Bootstrapping and Performance&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;5-operational-realities-bootstrapping-and-performance&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#5-operational-realities-bootstrapping-and-performance&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Writing automation is highly rewarding, but operating the system is where you see the reality of your design. Running &lt;code&gt;terraform apply&lt;/code&gt; takes about 2 to 3 minutes. The resources are created, the network is linked, and the instance boots.&lt;/p&gt;
+&lt;p&gt;Once the instance starts, the &lt;code&gt;systemd&lt;/code&gt; service initiates the AvalancheGo process. The node immediately begins &amp;ldquo;bootstrapping&amp;rdquo; — the process of connecting to other peers and downloading the history of the network.&lt;/p&gt;
+&lt;h3&gt;Monitoring the Bottlenecks&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;monitoring-the-bottlenecks&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#monitoring-the-bottlenecks&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;During the bootstrap phase, the demand on the system is extreme. Millions of cryptographic verifications happen, and the disk writes are constant. By monitoring the OCI metrics dashboard, I observed significant spikes in CPU usage and Disk IOPS (Input/Output Operations Per Second).&lt;/p&gt;
+&lt;p&gt;This validated my decision to use a separate Block Volume. Because OCI allows dynamic performance scaling for Block Volumes, if the node struggles to sync, I can simply adjust the &lt;code&gt;vpus_per_gb&lt;/code&gt; parameter in my Terraform code, re-apply the changes, and give the disk higher performance on the fly, without shutting down the server.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2&gt;6. Reflections and the Road Ahead&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;6-reflections-and-the-road-ahead&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#6-reflections-and-the-road-ahead&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Looking back at this project, it represents exactly why I love infrastructure engineering. We started with abstract concepts—decentralization, immutability, declarative infrastructure—and transformed them into a tangible, highly resilient system operating in the cloud.&lt;/p&gt;
+&lt;p&gt;This lab proves that the principles we use to manage enterprise applications—like separating state from compute, automating builds, and restricting network access—apply perfectly to Web3 environments.&lt;/p&gt;
+&lt;h3&gt;What&amp;rsquo;s Next?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;whats-next&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#whats-next&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;An engineer&amp;rsquo;s work is never truly finished. There are several ways to evolve this project:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CI/CD Pipelines:&lt;/strong&gt; Implementing GitHub Actions so that whenever Avalanche releases a new version, a pipeline automatically triggers Packer to build a new image and updates the Terraform state.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Observability:&lt;/strong&gt; Deploying a Prometheus and Grafana stack alongside the node to collect deep metrics directly from the Avalanche client&amp;rsquo;s &lt;code&gt;/ext/metrics&lt;/code&gt; endpoint.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;High Availability (HA):&lt;/strong&gt; Using Terraform to spin up multiple nodes behind an internal load balancer to provide HA for RPC requests.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This journey reinforced my belief that to lead in technology, you must never stop experimenting.&lt;/p&gt;
+&lt;h3&gt;Explore the Codebase&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;explore-the-codebase&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#explore-the-codebase&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;I have made this entire project open-source. Whether you are a Cloud Engineer wanting to learn Terraform on OCI, or a Web3 enthusiast trying to run a node professionally, the code is there for you.&lt;/p&gt;
+&lt;p&gt;Feel free to clone, fork, study, or open issues. Let&amp;rsquo;s continue pushing the boundaries of automation together.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wiltonpaulo/avalanche-node&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub: Avalanche Node Main Repository&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wiltonpaulo/avalanche-node/tree/main/packer&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub: Packer Configurations&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/wiltonpaulo/avalanche-node/tree/main/terraform&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub: Terraform Modules&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>
